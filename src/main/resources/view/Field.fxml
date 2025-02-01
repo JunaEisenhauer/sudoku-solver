@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane stylesheets="@../style/SudokuSolverApp.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.junaeisenhauer.sudokusolver.controller.FieldController">
+    <children>
+        <TextField fx:id="number" prefHeight="50.0" prefWidth="50.0" styleClass="numberField" text="0" />
+    </children>
+</StackPane>

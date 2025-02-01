@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane stylesheets="@../style/SudokuSolverApp.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.junaeisenhauer.sudokusolver.controller.SudokuSolverController">
+    <top>
+        <ToolBar>
+            <items>
+                <Label id="title" text="%app.title" />
+            </items>
+        </ToolBar>
+    </top>
+    <bottom>
+        <HBox id="actions">
+            <children>
+                <Button fx:id="solve" onAction="#onSolve" text="%sudoku.solve" />
+                <Button fx:id="reset" mnemonicParsing="false" onAction="#onReset" text="%sudoku.reset" />
+                <ProgressIndicator fx:id="progress" visible="false" />
+            </children>
+        </HBox>
+    </bottom>
+    <center>
+        <StackPane>
+            <children>
+            <FlowPane id="content">
+               <children>
+                      <GridPane id="grid" fx:id="grid">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <FlowPane.margin>
+                        <Insets />
+                     </FlowPane.margin></GridPane>
+               </children>
+            </FlowPane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

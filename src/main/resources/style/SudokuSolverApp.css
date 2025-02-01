@@ -1,0 +1,32 @@
+#title {
+    -fx-font-family: Roboto;
+    -fx-font-size: 30;
+}
+
+#content {
+    -fx-alignment: center;
+}
+
+#grid {
+    -fx-border-width: 2;
+    -fx-border-color: black;
+    -fx-border-insets: 8;
+    -fx-alignment: center;
+}
+
+.subGrid {
+    -fx-border-width: 2;
+    -fx-border-color: black;
+}
+
+.numberField {
+    -fx-alignment: center;
+    -fx-font-family: "Roboto Condensed";
+    -fx-font-size: 25;
+}
+
+#actions {
+    -fx-padding: 8;
+    -fx-alignment: center;
+    -fx-spacing: 16;
+}
